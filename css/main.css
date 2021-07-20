@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* ========== すべて共通 ========== */
+html, body {
+	font-size: 16px;
+	font-family: 'M PLUS 1p', sans-serif;
+	color: #000;
+	text-align: center;
+}
+html {
+	background: url(../images/h8.png) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;	/* 空白 */
+}
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0 auto 0 auto;	/* 空白 */
+	padding: 0;
+}
+p, td, th, li {
+	line-height: 1.6;
+}
+strong {
+	color: #1f1fcc;
+	font-size: 1.3rem;	
+}
+img {
+	width: 100%;
+	height: auto;
+}
+a {
+	color: 1f1fcc;
+	text-decoration: none;
+}
+a:hover {
+	color: 1f1fff;
+}
+a:active {
+	color: 1f1f99;
+}
+/* 共通の見出し */
+h1 {
+	margin-bottom: 0rem;
+	border-bottom: 0px dashed cc1f1f;
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+/* ========== ヘッダー ========== */
+header {
+	background-color: rgba( 0, 0, 0, 0.50 );
+}
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 130px;
+	height: 100px;
+}
+
+/* ========== index.html トップページ ========== */
+/* 見出し */
+.summer-h2 {
+	margin: 0px auto 20px auto;	/* 空白 */
+	border: 0px solid #1f1fff;	/* 縁取り */
+	padding: 5px;			/* 文字周り余白 */
+	max-width: 270px;
+	border-radius: 0px;		/* 角丸める */
+	background: url(../images/h0.jpg) no-repeat center center;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.summer-h3 {
+	margin: 10px auto 10px auto;	/* 空白 */
+	border: 0px solid #1f1fff;	/* 縁取り */
+	padding: 5px;			/* 文字周り余白 */
+	max-width: 120px;
+	border-radius: 0px;		/* 角丸める */
+	background: url(../images/h2.jpg) no-repeat center center;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+/* 枠内 */
+.summer-div {
+	margin: 20px auto 20px auto;	/* 空白 */
+	padding: 20px 20px;
+	border: 0px solid #1f1fff;
+	border-radius: 0px;
+	max-width: 320px;
+	background-color: rgba( 255, 255, 255, 0.75 );
+}
+.summer-p {
+	padding: 10px 0;
+}
+.summer-p img{
+	max-width: 220px;
+	height: auto;
+}
+
+/* ========== 上に戻るボタン ========== */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+.pagetop-img {
+	padding-top: 0.7rem;
+	max-width: 50%;
+	height: auto;
+}
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #1f1fff;
+	text-decoration: none;
+}
+
+/* ========== カウントボタン ========== */
+#disp_count {
+	background-color: #1f1fff;
+	color: #FFF;
+	font-size: 72px;
+	border-radius: 10px;
+	padding: 10px;
+	width: 180px;
+}
+
+#btn_count_up {
+	font-size: 24px;
+	border-radius: 10px;
+	padding: 20px 78px;
+	margin-top: 10px;
+}
+
+#btn_reset {
+	font-size: 24px;
+	border-radius: 10px;
+	padding: 11px;
+	margin-top: 10px;
+}
+
+#openTwitter {
+	font-size: 24px;
+	border-radius: 10px;
+	padding: 11px;
+	margin-top: 10px;
+}
+
+#btn_count_up:hover {
+	background-color: #8f8fff;
+}
+#btn_reset:hover {
+	background-color: #ff8f8f;
+}
+#openTwitter:hover {
+	background-color: #8f8fff;
+}
+
+/* ========== 夏休み合作2021ビンゴゲーム ========== */
+.bingo {
+	table-layout:fixed;
+	border:1px solid black;
+	background: #9932CC;
+	width: 100%;
+}
+.bingo th {
+	font-size: 20px;
+	color: #E6E6FA;
+}
+.bingo td {
+	font-size: 13px;
+	vertical-align: middle;
+	border:1px solid black;
+	text-align: center;
+	line-height: 50px;
+	width: 20%;
+	background: #E6E6FA;
+}
+.bingo .isclicked_true {
+	background: #87CEEB;
+}

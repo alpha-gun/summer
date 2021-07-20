@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href=""><!-- favicon.ico -->
+<link rel="apple-touch-icon" href=""><!-- iphone.png -->
+<meta name="description" content="夏休み合作">
+<title>夏休み合作</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/swiper.css">
+<!-- <meta name="twitter:card" content="summary_large_image"> --><!-- サムネイル（大） -->
+<meta name="twitter:card" content="summary"><!-- サムネイル（小）の場合はこちらを使用 -->
+<meta name="twitter:site" content="@alpha_gun">
+<meta name="twitter:title" content="夏休み合作">
+<meta name="twitter:description" content="夏休み合作">
+<meta name="twitter:image" content="images/summer_samune.png">
+</head>
+
+<body>
+<!-- ========== header ========== -->
+<header>
+<div class="container header-container">
+<div class="header-inner">
+<h1 class="header-logo"><img src="images/summer2021.png" alt="夏休み合作"></h1>
+</div><!-- /header-inner -->
+</div><!-- /header-container -->
+</header>
+<!-- ========== /header ========== -->
+
+<!-- ========== main ========== -->
+<div class="summer-div">
+	<h2 class="summer-h2">DINGOゲーム</h2>
+	<p class="summer-p">合作中に出てくるワードで<br>ビンゴゲームに挑戦！</p>
+	<h3 class="summer-h3">ルール</h3>
+	<p class="summer-p"><a href="https://www.nicovideo.jp/watch/sm39ABCDEF" target="_blank"><u>『DINOSAURI夏休み合作2021』</u></a>を再生しながら、合作に登場したワードをタップする連動型ゲームです。「確定」ボタンを押すとツイッター上でビンゴ数を報告する事が出来ます。もし13回以上ビンゴした場合は速やかにご連絡ください。</p>
+	<p>
+		<table cellspacing="7" class="bingo">
+			<thead>
+				<tr>
+					<th>D</th>
+					<th>I</th>
+					<th>N</th>
+					<th>G</th>
+					<th>O</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+		<div id="emergence_number">
+			<p>ビンゴの数：<span id="bingo_count">0</span></p>
+		</div>
+		<input type="button" value="確定" id="openTwitter" />
+	</p>
+	<p class="summer-p">
+		<a href="http://0724.tokyo/summer/2020/"><u>2020年の連動ゲームはこちら</u></a>
+	</p>
+</div>
+
+<div class="summer-div">
+	<h2 class="summer-h2">過去の夏休み合作</h2>
+	<h3 class="summer-h3">2020年</h3>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm37569836" target="_blank">
+			<img src="images/2020_1.png" alt="2020_1">
+			</a>
+		</p>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm37107459" target="_blank">
+			<img src="images/2020.png" alt="2020">
+			</a>
+		</p>
+	<h3 class="summer-h3">2019年</h3>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm35444071" target="_blank">
+			<img src="images/2019.png" alt="2019">
+			</a>
+		</p>
+	<h3 class="summer-h3">2018年</h3>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm33578741" target="_blank">
+			<img src="images/2018.png" alt="2018">
+			</a>
+		</p>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm33576137" target="_blank">
+			<img src="images/2018_1.png" alt="2018_1">
+			</a>
+		</p>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm33577254" target="_blank">
+			<img src="images/2018_2.png" alt="2018_2">
+			</a>
+		</p>
+	<h3 class="summer-h3">2017年</h3>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm31613584" target="_blank">
+			<img src="images/2017.png" alt="2017">
+			</a>
+		</p>
+	<h3 class="summer-h3">2016年</h3>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm29278733" target="_blank">
+			<img src="images/2016.png" alt="2016">
+			</a>
+		</p>
+	<h3 class="summer-h3">2015年</h3>
+		<p class="summer-p">
+			<a href="https://www.nicovideo.jp/watch/sm26759230" target="_blank">
+			<img src="images/2015.png" alt="2015">
+			</a>
+		</p>
+</div>
+
+<div class="summer-div">
+	<h2 class="summer-h2">外部リンク</h2>
+	<p class="summer-p">
+		<a href="https://0724.tokyo"><img src="images/0724tokyo.png" alt="冷蔵庫" target="_blank"></a>
+	</p>
+	<p class="summer-p">
+		<a href="https://twitter.com/alpha_gun"><img src="images/twitter.png" alt="ツイッター" target="_blank"></a>
+	</p>
+</div>
+<!-- ========== /main ========== -->
+
+<script src="script/script.js"></script>
+<script src="script/counter.js"></script>
+<script src="script/bingo.js"></script>
+<script src="script/swiper.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
+<script>
+//一番上に戻る
+jQuery(document).ready(function() {
+	var offset = 100;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.pagetop').fadeIn(duration);
+		} else {
+			jQuery('.pagetop').fadeOut(duration);
+		}
+	});
+	jQuery('.pagetop').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+});
+</script>
+
+<div class="pagetop"><img src="images/top.png" class="pagetop-img"></div> 
+
+</body>
+</html>
