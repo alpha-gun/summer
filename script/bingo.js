@@ -135,7 +135,7 @@ var openTwitter = document.getElementById("openTwitter");
 var text1 = "夏休み合作のDINGOゲームで『";
 var text2 = "回』ビンゴしました！";
 var url = "0724.tokyo/summer/";
-var hash = "sm39079399";
+var hash = "sm39084681";
 
 // 確定ボタンクリック処理
 openTwitter.onclick = function (){
