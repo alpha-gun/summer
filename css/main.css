@@ -205,7 +205,7 @@ header {
 .bingo2022 {
 	table-layout:fixed;
 	border:1px solid black;
-	background: #9932CC;
+	background: #6495ED;
 	width: 100%;
 }
 .bingo2022 th {
@@ -222,5 +222,5 @@ header {
 	background: #E6E6FA;
 }
 .bingo2022 .isclicked_true {
-	background: #87CEEB;
+	background: #87CEFA;
 }
