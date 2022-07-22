@@ -132,7 +132,7 @@ updateGame();
 
 // Tweet用
 var openTwitter = document.getElementById("openTwitter");
-var text1 = "夏休み合作の「キチマスビンGO!」で";
+var text1 = "夏休み合作の「キチマスビンGO！」で";
 var text2 = "回ビンゴしました！特設ページで、プロデューサーさんのビンゴシートを確認しましょう！";
 var url = "https://0724.tokyo/summer/";
 var hash = "sm4ABCDEFG";
