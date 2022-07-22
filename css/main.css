@@ -60,6 +60,13 @@ header {
 	width: 130px;
 	height: 100px;
 }
+/* キチマス用 20220724 */
+.header-logo2022 {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 230px;
+	height: 100px;
+}
 
 /* ========== index.html トップページ ========== */
 /* 見出し */
@@ -171,17 +178,17 @@ header {
 }
 
 /* ========== 夏休み合作2021ビンゴゲーム ========== */
-.bingo {
+.bingo2021 {
 	table-layout:fixed;
 	border:1px solid black;
 	background: #9932CC;
 	width: 100%;
 }
-.bingo th {
+.bingo2021 th {
 	font-size: 20px;
 	color: #E6E6FA;
 }
-.bingo td {
+.bingo2021 td {
 	font-size: 13px;
 	vertical-align: middle;
 	border:1px solid black;
@@ -190,6 +197,30 @@ header {
 	width: 20%;
 	background: #E6E6FA;
 }
-.bingo .isclicked_true {
+.bingo2021 .isclicked_true {
+	background: #87CEEB;
+}
+
+/* ========== 夏休み合作2022ビンゴゲーム ========== */
+.bingo2022 {
+	table-layout:fixed;
+	border:1px solid black;
+	background: #9932CC;
+	width: 100%;
+}
+.bingo2022 th {
+	font-size: 20px;
+	color: #E6E6FA;
+}
+.bingo2022 td {
+	font-size: 13px;
+	vertical-align: middle;
+	border:1px solid black;
+	text-align: center;
+	line-height: 15px;
+	width: 20%;
+	background: #E6E6FA;
+}
+.bingo2022 .isclicked_true {
 	background: #87CEEB;
 }
