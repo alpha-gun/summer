@@ -27,7 +27,7 @@ const initialArray = [
 	'<br>椎名<br>法子<br>　',
 	'<br>円城寺<br>道流<br>　',
 	'<br>和泉<br>愛依<br>　',
-	'<br>小糸<br>和泉<br>　',
+	'<br>福丸<br>小糸<br>　',
 	'<br>大崎<br>甘奈<br>　',
 	].filter(x => x !== 0);
 
@@ -135,7 +135,7 @@ var openTwitter = document.getElementById("openTwitter");
 var text1 = "夏休み合作の「キチマスビンGO！」で";
 var text2 = "回ビンゴしました！特設ページで、プロデューサーさんのビンゴシートを確認しましょう！";
 var url = "https://0724.tokyo/summer/";
-var hash = "sm4ABCDEFG";
+var hash = "sm40817952";
 
 // 確定ボタンクリック処理
 openTwitter.onclick = function (){
