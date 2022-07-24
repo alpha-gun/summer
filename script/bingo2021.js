@@ -134,7 +134,7 @@ updateGame();
 var openTwitter = document.getElementById("openTwitter");
 var text1 = "夏休み合作のDINGOゲームで『";
 var text2 = "回』ビンゴしました！";
-var url = "https://0724.tokyo/summer/";
+var url = "https://0724.tokyo/summer/2021/";
 var hash = "sm39084681";
 
 // 確定ボタンクリック処理
