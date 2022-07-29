@@ -224,3 +224,27 @@ header {
 .bingo2022 .isclicked_true {
 	background: #87CEFA;
 }
+
+/* ========== 夏休み合作2022ビンゴゲーム上級 ========== */
+.bingo2022advanced {
+	table-layout:fixed;
+	border:1px solid black;
+	background: #FF4500;
+	width: 100%;
+}
+.bingo2022advanced th {
+	font-size: 20px;
+	color: #FFFACD;
+}
+.bingo2022advanced td {
+	font-size: 9px;
+	vertical-align: middle;
+	border:1px solid black;
+	text-align: center;
+	line-height: 20px;
+	width: 20%;
+	background: #FFFFE0;
+}
+.bingo2022advanced .isclicked_true {
+	background: #FFD700;
+}
