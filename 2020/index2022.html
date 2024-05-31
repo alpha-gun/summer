@@ -7,24 +7,25 @@
 <link rel="shortcut icon" href=""><!-- favicon.ico -->
 <link rel="apple-touch-icon" href=""><!-- iphone.png -->
 <meta name="description" content="夏休み合作">
-<title>夏休み合作2021 | 夏休み合作</title>
+<title>夏休み合作2020 | 夏休み合作</title>
 <link rel="stylesheet" href="../css/normalize.css">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/swiper.css">
+<!-- <meta name="twitter:card" content="summary_large_image"> --><!-- サムネイル（大） -->
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <!-- OGPの設定 -->
 <meta property="og:type" content="article" />
-<meta property="og:title" content="DINOSAURI夏休み合作2021 連動ゲーム" />
-<meta property="og:description" content="合作中に出てくるワードでビンゴゲームに挑戦！" />
-<meta property="og:url" content="https://0724.tokyo/summer/2021/" />
+<meta property="og:title" content="DINOSAURI夏休み合作 連動ゲーム" />
+<meta property="og:description" content="合作中に何回「yee」と言ってたか数えてみよう！" />
+<meta property="og:url" content="https://0724.tokyo/summer/2020/" />
 <meta property="og:site_name" content="夏休み合作" />
-<meta property="og:image" content="https://0724.tokyo/summer/images/summer_samune2021.png" />
+<meta property="og:image" content="https://0724.tokyo/summer/images/summer_samune.png" />
 <!-- Twitterカードの設定 -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="DINOSAURI夏休み合作2021 連動ゲーム" />
-<meta name="twitter:description" content="合作中に出てくるワードでビンゴゲームに挑戦！" />
+<meta name="twitter:title" content="DINOSAURI夏休み合作 連動ゲーム" />
+<meta name="twitter:description" content="合作中に何回「yee」と言ってたか数えてみよう！" />
 <meta name="twitter:site" content="@alpha_gun" />
 
 </head>
@@ -42,27 +43,14 @@
 
 <!-- ========== main ========== -->
 <div class="summer-div">
-	<h2 class="summer-h2">DINGOゲーム</h2>
-	<p class="summer-p">合作中に出てくるワードで<br>ビンゴゲームに挑戦！</p>
+	<h2 class="summer-h2">yeeカウントゲーム</h2>
+	<p class="summer-p">合作中に何回「yee」と言ってたか数えてみよう！</p>
 	<h3 class="summer-h3">ルール</h3>
-	<p class="summer-p"><a href="https://www.nicovideo.jp/watch/sm39084681" target="_blank"><u>『DINOSAURI夏休み合作2021』</u></a>を再生しながら、合作に登場したワードをタップする連動型ゲームです。「確定」ボタンを押すとツイッター上でビンゴ数を報告する事が出来ます。もし13回以上ビンゴした場合は速やかにご連絡ください。</p>
-	<p>
-		<table cellspacing="7" class="bingo2021">
-			<thead>
-				<tr>
-					<th>D</th>
-					<th>I</th>
-					<th>N</th>
-					<th>G</th>
-					<th>O</th>
-				</tr>
-			</thead>
-			<tbody id="tbody">
-			</tbody>
-		</table>
-		<div id="emergence_number">
-			<p>ビンゴの数：<span id="bingo_count">0</span></p>
-		</div>
+	<p class="summer-p"><a href="https://www.nicovideo.jp/watch/sm37107459" target="_blank"><u>『DINOSAURI夏休み合作』</u></a>を再生しながら、「yee」と聞こえてきた回数をカウントする連動型ゲームです。<br>「yee」ボタンを1回押すごとに1回カウントが可能です。「確定」ボタンを押すとツイッター上で回数を報告する事が出来ます。果たして正解者は現れるのか！？</p>
+	<p class="summer-p">
+		<div id="disp_count">0</div>
+		<input type="button" value="yee" id="btn_count_up" /><br>
+		<input type="button" value="数え直し" id="btn_reset" />
 		<input type="button" value="確定" id="openTwitter" />
 	</p>
 	<p class="summer-p">
@@ -73,7 +61,6 @@
 
 <script src="../script/script.js"></script>
 <script src="../script/counter.js"></script>
-<script src="../script/bingo2021.js"></script>
 <script src="../script/swiper.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -99,7 +86,7 @@ jQuery(document).ready(function() {
 });
 </script>
 
-<div class="pagetop"><img src="images/top.png" class="pagetop-img"></div> 
+<div class="pagetop"><img src="../images/top.png" class="pagetop-img"></div> 
 
 </body>
 </html>
