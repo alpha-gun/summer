@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href=""><!-- favicon.ico -->
+<link rel="apple-touch-icon" href=""><!-- iphone.png -->
+<meta name="description" content="夏休み合作">
+<title>キチマスビンGO！上級編【夏休み合作2022連動ゲーム】</title>
+<link rel="stylesheet" href="../../css/normalize.css">
+<link rel="stylesheet" href="../../css/main2022.css">
+<link rel="stylesheet" href="../../css/swiper.css">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@alpha_gun">
+<meta name="twitter:title" content="夏休み合作">
+<meta name="twitter:description" content="夏休み合作">
+<meta name="twitter:image" content="../../images/archives/summer_samune2022advanced.png">
+</head>
+
+<body>
+<!-- ========== header ========== -->
+<header>
+<div class="container header-container">
+<div class="header-inner">
+<h1 class="header-logo"><img src="../../images/archives/summer.png" alt="夏休み合作"></h1>
+</div><!-- /header-inner -->
+</div><!-- /header-container -->
+</header>
+<!-- ========== /header ========== -->
+
+<!-- ========== main ========== -->
+<div class="summer-div">
+	<h2 class="summer-h2">キチマスビンGO!上級編</h2>
+	<p class="summer-p"><b>合作中に出てくるワードで<br>ビンゴゲームに挑戦！</b></p>
+	<h3 class="summer-h3">ルール</h3>
+	<p class="summer-p"><a href="https://www.nicovideo.jp/watch/sm40817952" target="_blank"><u>『キチガイマスター夏休み合作』</u></a>を再生しながら、合作に登場したアイドルをタップする連動型ゲームです。「確定」ボタンを押すとツイッター上でビンゴ数を報告出来ます。</p>
+	<p>
+		<table cellspacing="7" class="bingo2022advanced">
+			<thead>
+				<tr>
+					<th>B</th>
+					<th>I</th>
+					<th>G</th>
+					<th>G</th>
+					<th>I</th>
+					<th>G</th>
+					<th>O</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+		<div id="emergence_number">
+			<p>ビンゴの数：<span id="bingo_count">0</span></p>
+		</div>
+		<input type="button" value="確定" id="openTwitter" />
+	</p>
+	<p class="summer-p">
+		<a href="../"><u><b>キチマスビンGO！へ戻る</b></u></a>
+	</p>
+</div>
+
+<div class="summer-div">
+	<h2 class="summer-h2">お問い合わせ</h2>
+	<p class="summer-p">
+		<b>本ページに関するお問い合わせは<br>下記ページまでお願いします。</b>
+	</p>
+	<!--
+	<p class="summer-p">
+		<a href="https://0724.tokyo"><img src="../../images/archives/0724tokyo.png" alt="冷蔵庫" target="_blank"></a>
+	</p>
+	-->
+	<p class="summer-p">
+		<a href="https://twitter.com/alpha_gun"><img src="../../images/archives/twitter.png" alt="ツイッター" target="_blank"></a>
+	</p>
+</div>
+<!-- ========== /main ========== -->
+
+<script src="../../script/script.js"></script>
+<script src="../../script/counter.js"></script>
+<script src="../../script/bingo2022advanced.js"></script>
+<script src="../../script/swiper.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
+<script>
+//一番上に戻る
+jQuery(document).ready(function() {
+	var offset = 100;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.pagetop').fadeIn(duration);
+		} else {
+			jQuery('.pagetop').fadeOut(duration);
+		}
+	});
+	jQuery('.pagetop').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+});
+</script>
+
+<div class="pagetop"><img src="../../images/archives/top.png" class="pagetop-img"></div> 
+
+</body>
+</html>
