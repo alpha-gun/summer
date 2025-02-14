@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>夏休み合作投稿祭</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="icon" href="images/favicon.ico"><!-- favicon.ico -->
+<!-- フォントの設定 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+<!-- OGPの設定 -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="夏休み合作投稿祭" />
+<meta property="og:description" content="2025年は夏休み合作投稿10周年！" />
+<meta property="og:url" content="https://alpha-gun.github.io/summer/" />
+<meta property="og:site_name" content="チャ一研投稿祭'25" />
+<meta property="og:image" content="https://alpha-gun.github.io/summer/images/x.png" />
+<!-- Twitterカードの設定 -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="夏休み合作投稿祭" />
+<meta name="twitter:description" content="2025年は夏休み合作投稿10周年！" />
+<meta name="twitter:site" content="@alpha_gun" />
+</head>
+
+<body>
+<!-- ========== header ========== -->
+
+<div class="logo">
+	<img src="images/title.png">
+</div>
+
+<!-- ========== /header ========== -->
+
+<section class="page-cover">
+
+<!-- ========== main ========== -->
+<section class="main">
+	<div class="container">
+		<main>
+
+			<div class="loading">
+				<img class="loading__logo" src="images/title.png" alt="夏休み合作投稿祭">
+			</div>
+
+			<div class="title"><img src="images/title.png"></div>
+			<div class="fade"><img src="images/kaisai.png"></div>
+			<div class="fade"><img src="images/about.png"></div>
+			<div class="fade"><img src="images/kikan.png"></div>
+
+			<div class="fade"><img src="images/sanka.png"></div>
+			<div class="fade">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeN4uL6QhM5j0gjcfZbuOepTFJ-aWLQnzgqdFbhTV_yRnovsQ/viewform?embedded=true" width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+			</div>
+			<div class="fade"><img src="images/attention.png"></div>
+			<div class="fade"><img src="images/attention1.png"></div>
+			<div class="fade"><img src="images/attention2.png"></div>
+			<div class="fade"><img src="images/attention3.png"></div>
+			<div class="fade"><img src="images/attention4.png"></div>
+			<div class="fade"><img src="images/attention5.png"></div>
+			<div class="fade"><img src="images/attention6.png"></div>
+			<div class="fade"><img src="images/attention7.png"></div>
+			<div class="fade"><img src="images/attention8.png"></div>
+			<div class="fade"><img src="images/attention9.png"></div>
+
+			<div class="fade"><img src="images/advice.png"></div>
+			<div class="fade"><img src="images/advice1.png"></div>
+			<div class="fade"><img src="images/advice2.png"></div>
+			<div class="fade"><img src="images/advice3.png"></div>
+			<div class="fade"><img src="images/advice4.png"></div>
+			<div class="fade"><img src="images/advice5.png"></div>
+			<div class="fade"><img src="images/advice6.png"></div>
+
+			<div class="fade"><img src="images/gallery.png"></div>
+
+			<a href="2022" target="_blank" class="img_wrap"><img src="images/archives.png"></a>
+			<a href="https://message.blogcms.jp/livedoor/alpha_gun/message" target="_blank" class="img_wrap"><img src="images/form.png"></a>
+			<a href="https://twitter.com/alpha_gun" target="_blank" class="img_wrap"><img src="images/twitter.png"></a>
+
+		</main>
+	</div>
+</section>
+<!-- ========== /main ========== -->
+
+</section>
+
+<!-- ========== footer ========== -->
+<!-- ========== /footer ========== -->
+
+<script src="script/script.js"></script>
+<script src="script/swiper.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
+<script>
+//画像スライダー
+var swiper = new Swiper('.swiper-container', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	loop: true,
+	autoHeight: true,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+});
+//一番上に戻る
+jQuery(document).ready(function() {
+	var offset = 100;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.pagetop').fadeIn(duration);
+		} else {
+			jQuery('.pagetop').fadeOut(duration);
+		}
+	});
+	jQuery('.pagetop').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+});
+//ロゴ
+jQuery(document).ready(function() {
+	var offset = 1500;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.logo').fadeIn(duration);
+		} else {
+			jQuery('.logo').fadeOut(duration);
+		}
+	});
+});
+
+</script>
+
+<div class="pagetop"><img src="images/top.png" class="pagetop-img"></div> 
+
+</body>
+</html>
