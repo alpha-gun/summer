@@ -8,3 +8,24 @@ if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),hb={set:function(a,b
 		$('.navbar').slideToggle()
 	})
 })(jQuery);
+
+// 画像のフェードイン
+$(function () {
+    // ウィンドウをスクロールしたら…
+    $(window).scroll(function () {
+        // ウィンドウの高さを取得
+        const wHeight = $(window).height();
+        // スクロールした量を取得
+        const wScroll = $(window).scrollTop();
+            // それぞれのblockクラスに対して…
+            $(".fade").each(function () {
+                // それぞれのblockクラスのウィンドウからの高さを取得
+                const bPosition = $(this).offset().top;
+                // スクロールした量が要素の高さを上回ったら
+                // その数値にウィンドウの高さを引き、最後に350pxを足す
+            if (wScroll > bPosition - wHeight + 350) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    });
+});
